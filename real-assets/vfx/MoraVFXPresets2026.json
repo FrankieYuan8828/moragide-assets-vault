@@ -1,0 +1,99 @@
+{
+  "version": "2026.1.0",
+  "name": "Mora GIDE Omni-VFX Presets 2026",
+  "supportedEngines": ["GameMaker 2026", "Unity 6 URP", "Unreal Engine 5.5 Niagara", "Three.js WebGL"],
+  "presets": [
+    {
+      "id": "vfx_explosion_shockwave",
+      "nameZh": "高能聚变爆破与引力冲击波",
+      "category": "explosion",
+      "textures": [
+        "https://raw.githubusercontent.com/FrankieYuan8828/kenney/master/2d/Explosion%20Pack/explosion_regular_sheet.png",
+        "https://raw.githubusercontent.com/FrankieYuan8828/kenney/master/2d/Particle%20Pack/smoke_01.png"
+      ],
+      "gameMaker2026": {
+        "part_type_shape": "pt_shape_explosion",
+        "part_type_size": [0.8, 2.5, 0.05, 0],
+        "part_type_color3": ["c_white", "c_yellow", "c_red"],
+        "part_type_alpha3": [1.0, 0.8, 0.0],
+        "part_type_speed": [4.0, 12.0, -0.2, 0],
+        "part_type_direction": [0, 360, 0, 0],
+        "part_type_life": [30, 60],
+        "part_type_blend": true
+      },
+      "unity6": {
+        "main": { "duration": 1.2, "startLifetime": 0.8, "startSpeed": 15.0, "startSize": 4.5 },
+        "colorOverLifetime": { "gradient": "HDR_FireBlast" },
+        "sizeOverLifetime": { "curve": "ExplosiveExpansion" },
+        "renderer": { "renderMode": "Billboard", "material": "URP_VFX_AdditiveBloom" }
+      },
+      "unreal5_5": {
+        "system": "NiagaraSystem",
+        "emitter": "NS_Explosion_Shockwave_Burst",
+        "spawnRate": 150,
+        "collision": "CPU_SceneDepth_Enabled"
+      }
+    },
+    {
+      "id": "vfx_sword_slash_aura",
+      "nameZh": "破空刀芒与月弧剑气",
+      "category": "slash",
+      "textures": [
+        "https://raw.githubusercontent.com/FrankieYuan8828/kenney/master/2d/Particle%20Pack/slash_01.png",
+        "https://raw.githubusercontent.com/FrankieYuan8828/kenney/master/2d/Particle%20Pack/trace_01.png"
+      ],
+      "gameMaker2026": {
+        "primitiveType": "pr_trianglelist",
+        "trailDurationMs": 180,
+        "blendMode": "bm_add",
+        "color": "$FF38BDF8"
+      },
+      "unity6": {
+        "component": "TrailRenderer",
+        "time": 0.22,
+        "minVertexDistance": 0.05,
+        "widthCurve": "CrescentTaper",
+        "material": "URP_VFX_SwordRibbon"
+      },
+      "unreal5_5": {
+        "system": "Niagara_Ribbon_BladeSlash",
+        "ribbonFacingMode": "Camera",
+        "uvTiling": 1.0,
+        "dynamicParameter": "SwordEnergyOverTime"
+      }
+    },
+    {
+      "id": "vfx_neon_laser_beam",
+      "nameZh": "极光霓虹超能激光束",
+      "category": "laser",
+      "textures": [
+        "https://raw.githubusercontent.com/FrankieYuan8828/kenney/master/2d/Alien%20UFO%20Pack/laserBlue1.png",
+        "https://raw.githubusercontent.com/FrankieYuan8828/examples/master/public/assets/particles/blue-flare.png"
+      ],
+      "shader": "NeonBloomLaserShader.glsl",
+      "parameters": {
+        "laserColor": [0.05, 0.85, 1.0],
+        "coreColor": [1.0, 1.0, 1.0],
+        "beamWidth": 0.04,
+        "glowIntensity": 2.8,
+        "pulseSpeed": 10.0
+      }
+    },
+    {
+      "id": "vfx_spacetime_vortex",
+      "nameZh": "时空扭曲黑洞奇点",
+      "category": "distortion",
+      "textures": [
+        "https://raw.githubusercontent.com/FrankieYuan8828/kenney/master/2d/Particle%20Pack/twirl_01.png",
+        "https://raw.githubusercontent.com/FrankieYuan8828/kenney/master/2d/Particle%20Pack/magic_01.png"
+      ],
+      "shader": "SpacetimeDistortionShader.glsl",
+      "parameters": {
+        "distortionPower": 0.12,
+        "shockwaveRadius": 0.45,
+        "chromaticAberration": 0.035,
+        "rotationSpeed": 2.5
+      }
+    }
+  ]
+}
