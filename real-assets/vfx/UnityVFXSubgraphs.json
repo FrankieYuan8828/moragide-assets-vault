@@ -1,0 +1,36 @@
+{
+  "name": "Unity 6 URP / VFX Graph Modular SubGraph Definitions",
+  "version": "6000.0.1",
+  "repository": "https://github.com/FrankieYuan8828/GameDev",
+  "license": "MIT",
+  "subgraphs": [
+    {
+      "id": "unity_subgraph_blade_slash",
+      "nameZh": "Unity 刀光与连招爆点模块 (SubGraph)",
+      "category": "combat_vfx",
+      "inputs": ["UV", "BladeTexture", "SlashArcTaper", "HDRTint", "EmissionIntensity"],
+      "outputs": ["BaseColor", "Emission", "AlphaCutoff"]
+    },
+    {
+      "id": "unity_subgraph_dissolve_burn",
+      "nameZh": "Unity 噪声消融与燃烧余烬边缘模块",
+      "category": "material_vfx",
+      "inputs": ["DissolveMask", "Threshold", "BurnEdgeWidth", "BurnEmberColor"],
+      "outputs": ["Albedo", "EmissionMask", "AlphaClip"]
+    },
+    {
+      "id": "unity_subgraph_hex_shield",
+      "nameZh": "Unity 六边形蜂巢护盾与受击震荡模块",
+      "category": "shield_vfx",
+      "inputs": ["HexScale", "FresnelPower", "HitPosition", "HitProgress"],
+      "outputs": ["ShieldColor", "HexEdgeAlpha", "RimEmission"]
+    },
+    {
+      "id": "unity_subgraph_hologram_glitch",
+      "nameZh": "Unity 赛博全息投影与电磁干扰扫描线",
+      "category": "sci_fi_vfx",
+      "inputs": ["ScanlineDensity", "FlickerSpeed", "ChromaticSplit", "GlitchIntensity"],
+      "outputs": ["HologramRGB", "ScanlineAlpha"]
+    }
+  ]
+}
