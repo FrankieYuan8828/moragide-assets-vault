@@ -1,0 +1,39 @@
+{
+  "name": "Godot 4 Action VFX & Shader Presets",
+  "version": "4.3.0",
+  "repository": "https://github.com/FrankieYuan8828/godot-visual-effects",
+  "license": "MIT",
+  "presets": [
+    {
+      "id": "godot_hit_flash",
+      "nameZh": "Godot 4 角色受击白光闪烁着色器",
+      "type": "shader_canvas_item",
+      "code": "shader_type canvas_item;\nuniform vec4 flash_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);\nuniform float flash_modifier : hint_range(0.0, 1.0) = 0.0;\nvoid fragment() {\n    vec4 color = texture(TEXTURE, UV);\n    color.rgb = mix(color.rgb, flash_color.rgb, flash_modifier);\n    COLOR = color;\n}"
+    },
+    {
+      "id": "godot_energy_shockwave",
+      "nameZh": "Godot 4 径向地面能量冲击波",
+      "type": "particle_process_material",
+      "parameters": {
+        "emission_shape": "Ring",
+        "ring_radius": 3.0,
+        "ring_inner_radius": 2.5,
+        "spread": 180.0,
+        "gravity": [0, -2, 0],
+        "initial_velocity_min": 15.0,
+        "initial_velocity_max": 25.0
+      }
+    },
+    {
+      "id": "godot_lightning_arc",
+      "nameZh": "Godot 4 折线分支高压闪电电弧",
+      "type": "shader_spatial",
+      "parameters": {
+        "bolt_width": 0.08,
+        "glow_intensity": 3.5,
+        "color": [0.3, 0.7, 1.0],
+        "jitter_speed": 45.0
+      }
+    }
+  ]
+}
