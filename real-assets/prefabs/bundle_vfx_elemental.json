@@ -1,0 +1,43 @@
+{
+  "id": "bundle_vfx_elemental",
+  "name": "VFX - Elemental",
+  "nameZh": "元素粒子与爆破特效全能预制包",
+  "scope": "@gm-prefabs",
+  "version": "1.0.0",
+  "license": "CC0-1.0-Universal",
+  "verifiedNonInfringing": true,
+  "licenseAudit": "100% CC0 / MIT 认证公有领域素材，包含手绘爆炸、电弧、冰霜与火焰粒子，允许全球任意商用与二次分发",
+  "source": "GameMaker Community & Mora VFX Core (CC0)",
+  "description": "Dozens of hand-drawn VFX featuring explosions, electric arcs, projectiles and beams in lightning, fire, water, smoke and poison elements.",
+  "attributes": {
+    "Genre": "Elemental VFX",
+    "Style": "Hand drawn, detailed, shaded",
+    "Animation": "Yes (60FPS Spritesheets & Particle Presets)",
+    "VFXReady": true,
+    "SpecificElements": "Explosions, arcs, projectiles and beams all in lightning, fire, water, smoke and poison elements"
+  },
+  "itemsCount": 48,
+  "mglopBindings": {
+    "defaultBehavior": "ParticleEmitter2026 + MultiPassVFX",
+    "blendMode": "Additive",
+    "shaderType": "ProceduralMathSDF"
+  },
+  "packageManifest": {
+    "shaders": [
+      "sdf_blur.glsl",
+      "particle_burst.glsl",
+      "lightning_arc.glsl"
+    ],
+    "presets": [
+      "fire_column",
+      "ice_nova",
+      "poison_cloud",
+      "electric_spark"
+    ],
+    "textures": [
+      "groundExplosion00.png",
+      "groundExplosion01.png",
+      "groundExplosion02.png"
+    ]
+  }
+}
