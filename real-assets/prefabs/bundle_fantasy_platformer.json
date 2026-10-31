@@ -1,0 +1,37 @@
+{
+  "id": "bundle_fantasy_platformer",
+  "name": "Fantasy Platformer",
+  "nameZh": "奇幻横版动作跳跃冒险全套预制包",
+  "scope": "@gm-prefabs",
+  "version": "1.0.0",
+  "license": "CC0-1.0-Universal",
+  "verifiedNonInfringing": true,
+  "licenseAudit": "基于公有领域 Kenney Platformer Suite，100% 纯正开源美术与自研跳跃手感物理算法",
+  "source": "Kenney & Mora Platformer Suite (CC0)",
+  "description": "Vibrant side-scrolling platformer starter kit containing animated adventurers, jumping logic, coin collection mechanics, spikes, and biome tiles.",
+  "attributes": {
+    "Genre": "2D Side-Scroller Platformer",
+    "Animations": "Idle, Run, Jump, Fall, Hurt",
+    "TileWidth": "32 × 32 Auto-Tile",
+    "Physics": "Gravity 980px/s^2, JumpForce 420px/s"
+  },
+  "itemsCount": 26,
+  "mglopBindings": {
+    "defaultBehavior": "PlatformerController + JumpPhysics"
+  },
+  "packageManifest": {
+    "scripts": [
+      "PlatformerHero.ts",
+      "CoinPickup.ts",
+      "MovingPlatform.ts"
+    ],
+    "tiles": [
+      "grass_tileset.png",
+      "stone_platforms.png"
+    ],
+    "audio": [
+      "jump.mp3",
+      "coin_pickup.mp3"
+    ]
+  }
+}
