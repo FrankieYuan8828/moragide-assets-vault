@@ -1,0 +1,28 @@
+{
+  "id": "bundle_incidentals_food",
+  "name": "Incidentals - Food",
+  "nameZh": "美食料理与生命恢复补给品预制包",
+  "scope": "@gm-prefabs",
+  "version": "1.0.0",
+  "license": "CC0-1.0-Universal",
+  "verifiedNonInfringing": true,
+  "licenseAudit": "可口甜甜圈、面包、药水补给瓶等 22 种道具素材，100% 公有领域 CC0 许可",
+  "source": "Kenney Food Incidentals Kit (CC0)",
+  "description": "Vibrant food consumables for player stamina and health recovery: donuts, bread, cheese, roasted meats, apples, and potion flasks.",
+  "attributes": {
+    "Genre": "Consumables & Loot",
+    "BuffReady": "Health, Stamina, Mana Recovery Presets"
+  },
+  "itemsCount": 22,
+  "mglopBindings": {
+    "defaultBehavior": "ConsumableBuff + InventoryItem"
+  },
+  "packageManifest": {
+    "food": [
+      "Donut.glb",
+      "Bread.glb",
+      "HealthPotion.glb",
+      "ManaFlask.glb"
+    ]
+  }
+}
