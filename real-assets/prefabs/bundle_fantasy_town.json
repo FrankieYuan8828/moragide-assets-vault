@@ -1,0 +1,34 @@
+{
+  "id": "bundle_fantasy_town",
+  "name": "Fantasy Town",
+  "nameZh": "奇幻中世纪城镇建筑与地牢场景预制包",
+  "scope": "@gm-prefabs",
+  "version": "1.0.0",
+  "license": "CC0-1.0-Universal",
+  "verifiedNonInfringing": true,
+  "licenseAudit": "全量 65 套 3D 建筑组件均来自公开认证 CC0 游戏素材库，允许不受限制的商业开发与打包",
+  "source": "Kenney Fantasy Town Kit (CC0)",
+  "description": "Modular fantasy town kit packed with stone buildings, castle towers, blacksmith forge, timber houses, streetlamps, and market stalls.",
+  "attributes": {
+    "Genre": "Town & City Builder",
+    "AssetCount": "65 Modular 3D Structures",
+    "CollisionReady": true
+  },
+  "itemsCount": 65,
+  "mglopBindings": {
+    "defaultBehavior": "StaticMeshCollision + NavMesh"
+  },
+  "packageManifest": {
+    "models": [
+      "house_wood.glb",
+      "castle_tower.glb",
+      "blacksmith_forge.glb",
+      "windmill.glb"
+    ],
+    "props": [
+      "barrel.glb",
+      "crate.glb",
+      "streetlamp.glb"
+    ]
+  }
+}
