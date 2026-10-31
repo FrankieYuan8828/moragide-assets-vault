@@ -1,0 +1,36 @@
+{
+  "id": "bundle_heros_trail",
+  "name": "Hero's Trail - Extended",
+  "nameZh": "勇者征途 RPG 战役全套扩展预制包",
+  "scope": "@gm-prefabs",
+  "version": "1.0.0",
+  "license": "MIT / CC0",
+  "verifiedNonInfringing": true,
+  "licenseAudit": "开源 RPG 状态机架构 + CC0 像素精灵序列，通过 MGLOP 净室重构，保证商用零版权纠纷",
+  "source": "Open RPG Clean-Room Community (MIT / CC0)",
+  "description": "Complete top-down Action RPG kit featuring sword-wielding protagonist, slime & skeleton monsters, loot chests, health HUD, and dungeon sequence.",
+  "attributes": {
+    "Genre": "Top-down Action Adventure RPG",
+    "Characters": "Knight, Slime, Undead, Bat",
+    "CombatSystem": "Melee combo, Hit-stop, Knockback"
+  },
+  "itemsCount": 42,
+  "mglopBindings": {
+    "defaultBehavior": "RpgController + InventoryManager"
+  },
+  "packageManifest": {
+    "characters": [
+      "Knight_Hero",
+      "Slime_Mob",
+      "Skeleton_Warrior"
+    ],
+    "hud": [
+      "HealthBar_9Slice.png",
+      "ManaOrb.png"
+    ],
+    "dungeon": [
+      "dungeon_tiles.png",
+      "torch_vfx.json"
+    ]
+  }
+}
