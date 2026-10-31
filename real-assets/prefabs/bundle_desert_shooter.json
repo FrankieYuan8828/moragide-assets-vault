@@ -1,0 +1,39 @@
+{
+  "id": "bundle_desert_shooter",
+  "name": "Desert Shooter",
+  "nameZh": "沙漠双摇杆射击竞技完整工程预制包",
+  "scope": "@gm-prefabs",
+  "version": "1.0.0",
+  "license": "CC0 / MIT",
+  "verifiedNonInfringing": true,
+  "licenseAudit": "100% 净室自研双摇杆射击架构 + Kenney CC0 载具与沙漠沙地瓦片，零专有商业代码",
+  "source": "MGLOP TwinStick Clean-Room Architecture (CC0)",
+  "description": "Complete twin-stick arena shooter gameplay bundle with player hovercrafts, enemy crawler drones, projectile collision logic, and desert arena tileset.",
+  "attributes": {
+    "Genre": "Twin Stick Top-Down Shooter",
+    "Style": "Stylized 3D / 2.5D Arena",
+    "Physics": "RigidBody2D + Dynamic Collider",
+    "AudioIncluded": true
+  },
+  "itemsCount": 32,
+  "mglopBindings": {
+    "defaultBehavior": "ArenaShooterController + WaveSpawner",
+    "controllerType": "TwinStick"
+  },
+  "packageManifest": {
+    "controllers": [
+      "TwinStickPlayer.ts",
+      "EnemyCrawlerDrone.ts",
+      "ArenaBullet.ts"
+    ],
+    "models": [
+      "craft_cargoA.glb",
+      "turret_double.glb"
+    ],
+    "audio": [
+      "plasma_shoot.mp3",
+      "tank_engine.mp3",
+      "drone_explode.mp3"
+    ]
+  }
+}
