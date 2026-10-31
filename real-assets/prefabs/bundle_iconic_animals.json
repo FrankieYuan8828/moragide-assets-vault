@@ -1,0 +1,32 @@
+{
+  "id": "bundle_iconic_animals",
+  "name": "Iconic Animals",
+  "nameZh": "经典动物生物与萌宠坐骑预制包",
+  "scope": "@gm-prefabs",
+  "version": "1.0.0",
+  "license": "CC0-1.0-Universal",
+  "verifiedNonInfringing": true,
+  "licenseAudit": "包含野生灵狐、奔腾骏马、水晶巨龙等标准骨骼动画，均源自开源 Three.js / Khronos CC0 官方库",
+  "source": "Three.js & Kenney Creature Vault (CC0)",
+  "description": "Fully rigged and animated wildlife animals and companion pets: wilderness fox, galloping horse, crystal dragon, wolves, and forest birds.",
+  "attributes": {
+    "Genre": "Creatures & Pets",
+    "Rigged": "Yes (Mixamo / Blender Standard Skeleton)",
+    "IncludedMotions": "Idle, Walk, Run, Gallop, Jump"
+  },
+  "itemsCount": 16,
+  "mglopBindings": {
+    "defaultBehavior": "AnimalAI + FollowerBehavior"
+  },
+  "packageManifest": {
+    "models": [
+      "Fox.glb",
+      "Horse.glb",
+      "Dragon.glb"
+    ],
+    "controllers": [
+      "PetFollowAI.ts",
+      "MountRider.ts"
+    ]
+  }
+}
