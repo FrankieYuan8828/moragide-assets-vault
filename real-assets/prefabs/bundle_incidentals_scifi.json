@@ -1,0 +1,30 @@
+{
+  "id": "bundle_incidentals_scifi",
+  "name": "Incidentals - Sci-Fi",
+  "nameZh": "科幻太空探索设施与装置道具预制包",
+  "scope": "@gm-prefabs",
+  "version": "1.0.0",
+  "license": "CC0-1.0-Universal",
+  "verifiedNonInfringing": true,
+  "licenseAudit": "包含星际离子引擎推进器、太空货船外壳、能量控制台，100% 授权自 NASA/开源空间模型集",
+  "source": "Kenney Sci-Fi Space Suite (CC0)",
+  "description": "High-tech sci-fi equipment bundle featuring primary ion thrusters, cargo spacecraft hulls, cryo chambers, energy consoles, and laser turrets.",
+  "attributes": {
+    "Genre": "Sci-Fi Station & Starship",
+    "Features": "Animated Thruster Emission + PBR Shaders"
+  },
+  "itemsCount": 38,
+  "mglopBindings": {
+    "defaultBehavior": "InteractiveConsole + EnergySystem"
+  },
+  "packageManifest": {
+    "drives": [
+      "PrimaryIonDrive.glb",
+      "CargoShipHull.glb"
+    ],
+    "station": [
+      "CryoPod.glb",
+      "HoloConsole.glb"
+    ]
+  }
+}
