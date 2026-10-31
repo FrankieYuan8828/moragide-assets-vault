@@ -1,0 +1,33 @@
+{
+  "id": "bundle_incidentals_weapons",
+  "name": "Incidentals - Weapons",
+  "nameZh": "军火装备库与近战冷兵器道具预制包",
+  "scope": "@gm-prefabs",
+  "version": "1.0.0",
+  "license": "CC0-1.0-Universal",
+  "verifiedNonInfringing": true,
+  "licenseAudit": "涵盖 84 款现代枪械、导弹重炮与中世纪剑盾，经 CC0 协议全量脱敏释放",
+  "source": "Kenney Weapons Cache Bundle (CC0)",
+  "description": "Comprehensive weapon armory containing tactical pistols, rocket launchers, flamethrowers, broadswords, shields, and ammunition boxes.",
+  "attributes": {
+    "Genre": "Combat Arsenal",
+    "ItemCount": "84 Weapon Models & Textures",
+    "PBRMaps": "Albedo, Normal, Roughness, Metalness"
+  },
+  "itemsCount": 84,
+  "mglopBindings": {
+    "defaultBehavior": "EquipableWeapon + MuzzleAttachment"
+  },
+  "packageManifest": {
+    "weapons": [
+      "HeavyFlamethrower.glb",
+      "GuidedRocket.glb",
+      "Broadsword.glb",
+      "TacticalSniper.glb"
+    ],
+    "ammo": [
+      "RocketAmmo.glb",
+      "EnergyCell.glb"
+    ]
+  }
+}
