@@ -1,0 +1,31 @@
+{
+  "id": "bundle_incidentals_gems",
+  "name": "Incidentals - Jewels and Gems",
+  "nameZh": "璀璨宝石水晶与海盗宝藏箱预制包",
+  "scope": "@gm-prefabs",
+  "version": "1.0.0",
+  "license": "CC0-1.0-Universal",
+  "verifiedNonInfringing": true,
+  "licenseAudit": "金币旋转动画、海盗战利品宝箱、高折射宝石模型，100% CC0 认证并配有闪烁光效着色器",
+  "source": "Kenney Jewels & Gems Bundle (CC0)",
+  "description": "Sparkling gemstones, rubies, sapphires, gold coins, and ancient pirate chests with opening animation and particle gleam effects.",
+  "attributes": {
+    "Genre": "Treasures & Rewards",
+    "Animations": "Coin Spin, Chest Opening, Gem Sparkle"
+  },
+  "itemsCount": 29,
+  "mglopBindings": {
+    "defaultBehavior": "LootDropper + SparkleVFX"
+  },
+  "packageManifest": {
+    "chests": [
+      "PirateChest.glb",
+      "GoldenKey.glb"
+    ],
+    "gems": [
+      "Ruby.glb",
+      "Sapphire.glb",
+      "CoinSpin_Strip6.png"
+    ]
+  }
+}
